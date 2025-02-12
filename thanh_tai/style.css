@@ -6,12 +6,17 @@
     border-radius: 10px;
 }
 
-header{
-    background-color: rgb(0, 255, 255);
+section{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-body{
-    background-color:  rgb(0, 53, 139);
+html, body{
+    font-size: 16px;
+    color: white;
+    background-color:  rgb(10, 38, 71);
 }
 
 .avatar{
@@ -25,13 +30,45 @@ body{
     text-align: center;
     font-family: "Arial"; 
     font-size: 20px;
+    /* font-weight: bold; */
+    color: rgb(255,255,255);
+}
+
+.title-3{
+    font-family: "Arial"; 
+    font-size: 30px;
     font-weight: bold;
     color: rgb(255,255,255);
 }
-/* .section{
 
-} */
-
-.section1{
-    background-color: rgb(0, 53, 139);
+.aboutme{
+    background-color: rgb(44, 116, 179);
 }
+
+.work{
+    background-color: rgb(32, 82, 149);
+}
+
+.social{
+    background-color: rgb(20, 66, 114);
+}
+
+.link{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(231, 224, 201);
+}
+
+.info-work
+{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 20px;
+    color: rgb(255,255,255);
+}
+/* .social-container{
+    
+} */
