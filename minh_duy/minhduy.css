@@ -30,4 +30,22 @@ header{
     background-color: #04AA6D;
     color: white;
   }
- 
+.ha > h1 {
+    color: red;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+/* h2 {
+
+} */
+img {
+    float: right
+}
+#avatar{
+  width:300px;
+  height:300px;
+  clip-path: circle(100px at 50% 50%);
+}
+  
