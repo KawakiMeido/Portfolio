@@ -1,0 +1,12 @@
+#avatar {
+    float: right;
+    overflow: hidden;
+    margin: 0px 100px 0px 0px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    /* clip-path: content-box circle(50%); */
+}
