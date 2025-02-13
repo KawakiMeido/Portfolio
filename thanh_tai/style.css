@@ -1,10 +1,4 @@
 
-.box1{
-    width: 300px;
-    height: 200px;
-    background: url('images/haha.jpg') no-repeat center/cover;
-    border-radius: 10px;
-}
 
 section{
     padding-top: 1rem;
@@ -20,20 +14,48 @@ html, body{
 }
 
 .avatar{
-    background: url('images/haha.jpg') no-repeat center/cover;
-    margin: 0 auto;
+    /* background: url('images/haha.jpg') no-repeat center/cover; */
+    /* margin: 10; */
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    margin-right: 40px;
+}
+
+.logo{
+    height: 25px;
+    width: 25px;  
+}
+.info-work{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 25px;
+    color: rgb(255,255,255);
+}
+
+.link{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(231, 224, 201);
 }
 .myinfo{
-    text-align: center;
+    text-align: left;
     font-family: "Arial"; 
-    font-size: 20px;
+    font-size: 25px;
     /* font-weight: bold; */
     color: rgb(255,255,255);
 }
 
+.topic{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
 .title-3{
     font-family: "Arial"; 
     font-size: 30px;
@@ -41,10 +63,34 @@ html, body{
     color: rgb(255,255,255);
 }
 
-.aboutme{
+.logosocial{
+    height: 100px;
+    width: 100px;  
+}
+
+.social-container img{
+    max-width: 100%;
+    max-height: 175%;
+    margin-bottom: 15px;
+}
+.profile{
+
     background-color: rgb(44, 116, 179);
 }
 
+.aboutme{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+.bio{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: rgb(255,255,255);
+}
 .work{
     background-color: rgb(32, 82, 149);
 }
@@ -53,22 +99,11 @@ html, body{
     background-color: rgb(20, 66, 114);
 }
 
-.link{
-    text-align: left;
-    font-family: "Arial"; 
+.footer{
+    font-family: "Arial";
     font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(231, 224, 201);
+    text-align: center;
 }
 
-.info-work
-{
-    text-align: left;
-    font-family: "Arial"; 
-    font-size: 20px;
-    color: rgb(255,255,255);
-}
-/* .social-container{
-    
-} */
+
+
