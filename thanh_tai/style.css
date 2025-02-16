@@ -1,0 +1,109 @@
+
+
+section{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+html, body{
+    font-size: 16px;
+    color: white;
+    background-color:  rgb(10, 38, 71);
+}
+
+.avatar{
+    /* background: url('images/haha.jpg') no-repeat center/cover; */
+    /* margin: 10; */
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
+}
+
+.logo{
+    height: 25px;
+    width: 25px;  
+}
+.info-work{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 25px;
+    color: rgb(255,255,255);
+}
+
+.link{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(231, 224, 201);
+}
+.myinfo{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: rgb(255,255,255);
+}
+
+.topic{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+.title-3{
+    font-family: "Arial"; 
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+.logosocial{
+    height: 100px;
+    width: 100px;  
+}
+
+.social-container img{
+    max-width: 100%;
+    max-height: 175%;
+    margin-bottom: 15px;
+}
+.profile{
+
+    background-color: rgb(44, 116, 179);
+}
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+.bio{
+    text-align: left;
+    font-family: "Arial"; 
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: rgb(255,255,255);
+}
+.work{
+    background-color: rgb(32, 82, 149);
+}
+
+.social{
+    background-color: rgb(20, 66, 114);
+}
+
+.footer{
+    font-family: "Arial";
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
