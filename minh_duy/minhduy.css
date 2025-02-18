@@ -1,35 +1,23 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}  
-
 header{
-    display:flex;
+    display:flex
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    display:flex;
     background-color: #333;
     overflow: hidden;
-    align-items: center;     /* Aligns buttons vertically */
     width: 100%;
-    border-style: solid;
-    border-color: #333;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     color: #f2f2f2;
-    width: 150px;           /*Fixed width*/
     text-align: center;
-    justify-content: center;
-    padding: 10px 0px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
-  
   
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -42,4 +30,22 @@ header{
     background-color: #04AA6D;
     color: white;
   }
- 
+.ha > h1 {
+    color: red;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+/* h2 {
+
+} */
+img {
+    float: right
+}
+#avatar{
+  width:300px;
+  height:300px;
+  clip-path: circle(100px at 50% 50%);
+}
+  
