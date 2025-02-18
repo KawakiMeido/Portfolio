@@ -1,0 +1,367 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* fonts (xài thì ít mà gọi thì nhiều) */
+@font-face {
+  font-family: 'DFVN Boris';
+  src: url('fonts/DFVN Boris.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Beware';
+  src: url('fonts/Beware.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Christmas Day';
+  src: url('fonts/Christmas Day.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Paranoid Starting';
+  src: url('fonts/Paranoid Starting Demo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Staresso';
+  src: url('fonts/Staresso Demo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Utusi Star';
+  src: url('fonts/Utusi Star Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Challenge Conditions';
+  src: url('fonts/challenge conditions demo regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DFVN Lagmaq';
+  src: url('fonts/DFVN Lagmaq.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'iCiel Finch';
+  src: url('fonts/iCiel Finch.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'UTM Beautiful Caps';
+  src: url('fonts/UTM Beautiful Caps.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MTD MagicIvy';
+  src: url('fonts/MTD\MagicIvy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MTD Houstoner Script';
+  src: url('fonts/MTD\MTD Houstoner Script.otf') format('opentype');
+}
+
+/* background */
+body {
+  background: linear-gradient(rgba(83, 40, 100, 0.0), rgba(61, 48, 116, 0.0)), url('images/bg1.jpg');
+  background-size: cover;
+  /* Lấp đầy toàn bộ màn hình */
+  background-position: center;
+  /* Căn giữa ảnh nền */
+  background-attachment: fixed;
+  /* Giữ ảnh nền cố định khi cuộn trang */
+  overflow: hidden;
+}
+
+.cover {
+  position: relative;
+  height: 300px;
+  background: #ddd;
+  border: 10px solid white;
+
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* .header {
+  background: #92c1ffb4;
+  color: white;
+  justify-content: center;
+  padding: 1px 5px;
+  text-align: center;
+  font-size: 11px;
+} */
+
+/* đĩa nhạc */
+.dia-nhac {
+  margin-top: 220px;
+  margin-left: -575px;
+  display: flex;
+  /* Kích hoạt flexbox */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  text-align: center;
+  /* Đảm bảo chữ bên trong căn giữa */
+}
+
+/* avatar */
+.disc-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 246px;
+  height: 246px;
+  background: radial-gradient(circle, #e0e0e0 20%, #ffffff);
+  /* Hiệu ứng nền giống đĩa nhạc */
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 10s linear infinite;
+  /* Đĩa quay liên tục */
+  box-shadow: 0 0 10px rgba(150, 107, 107, 0.5);
+}
+
+.disc {
+  width: 222px;
+  height: 222px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* .avatar-line {
+  position: absolute;
+  display: flex;
+  top: 410px;
+  width: 150px;
+  height: 3.5px;
+  background: linear-gradient(150deg, rgb(255, 173, 156), rgb(255, 173, 156));
+  //background: linear-gradient(45deg, rgb(166, 182, 147), rgb(117, 146, 128)); 
+  border-radius: 4px;
+  margin: 10px auto;
+  box-shadow: 0 0 5px rgba(235, 144, 144, 0.5);
+} */
+
+/* liên hệ */
+.contact {
+  position: absolute;
+  display: flex;
+  font-size: 35px;
+  top: 390px;
+  font-family: 'DFVN Lagmaq';
+  color: rgb(145, 160, 127);
+  text-shadow: 0 0 5px rgba(59, 45, 45, 0.2);
+}
+
+/* icon contact */
+.icon-container {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  top: 470px;
+}
+
+.social-icon1,
+.social-icon2,
+.social-icon3 {
+  width: 40px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.social-icon1:hover,
+.social-icon2:hover,
+.social-icon3:hover {
+  transform: scale(1.15);
+}
+
+/* chữ */
+.content {
+  margin-top: -70px;
+  margin-left: 270px;
+  display: flex;
+  /* Kích hoạt flexbox */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  text-align: center;
+  /* Đảm bảo chữ bên trong căn giữa */
+}
+
+.ten {
+  display: flex;
+  position: absolute;
+  color: white;
+  font-size: 80px;
+  font-family: 'Staresso';
+  background: linear-gradient(45deg, #ff416c, rgb(255, 139, 148), #ff4b2b);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 2s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.quote {
+  display: flex;
+  position: absolute;
+  top: 225px;
+  color: #ffffff;
+  font-size: 37px;
+  text-align: center;
+  font-family: 'MTD Houstoner Script';
+  text-shadow: 0 0 10px rgba(92, 70, 70, 0.8);
+}
+
+.button-container1 {
+  margin-top: 180px;
+  margin-left: 270px;
+  display: flex;
+  /* Kích hoạt flexbox */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  gap: 25px;
+}
+
+.button-homepage,
+.button-me {
+  display: flex;
+  font-family: 'DFVN Lagmaq';
+  background: linear-gradient(45deg, rgb(145, 160, 127), rgb(146, 160, 127));
+  /* Gradient màu */
+  width: 160px;
+  height: 50px;
+  line-height: 55px;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  color: white;
+  /* Màu chữ */
+  /* Kích thước */
+  border: none;
+  border-radius: 12px;
+  /* Bo góc */
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* Hiệu ứng chuyển động */
+}
+
+.button-container2 {
+  margin-top: 20px;
+  margin-left: 270px;
+  display: flex;
+  /* Kích hoạt flexbox */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  gap: 25px;
+}
+
+.button-game,
+.button-artwork {
+  display: flex;
+  font-family: 'DFVN Lagmaq';
+  background: linear-gradient(45deg, rgb(145, 160, 127), rgb(146, 160, 127));
+  /* Gradient màu */
+  width: 160px;
+  height: 50px;
+  line-height: 55px;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  color: white;
+  /* Màu chữ */
+  /* Kích thước */
+  border: none;
+  border-radius: 12px;
+  /* Bo góc */
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* Hiệu ứng chuyển động */
+}
+
+.button-homepage:hover,
+.button-me:hover,
+.button-game:hover,
+.button-artwork:hover {
+  background: linear-gradient(45deg, rgb(127, 160, 146), rgb(127, 160, 146));
+  /* Đổi màu khi hover */
+  transform: scale(1.05);
+  /* Phóng to nhẹ */
+}
+
+/* hieu ung nhac */
+#notes-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.note {
+  position: absolute;
+  animation: fall linear infinite;
+  user-select: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 10;
+}

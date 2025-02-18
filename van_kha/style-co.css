@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* fonts (xài thì ít mà gọi thì nhiều) */
+@font-face {
+  font-family: 'DFVN Boris';
+  src: url('fonts/DFVN Boris.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Beware';
+  src: url('fonts/Beware.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Christmas Day';
+  src: url('fonts/Christmas Day.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Paranoid Starting';
+  src: url('fonts/Paranoid Starting Demo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Staresso';
+  src: url('fonts/Staresso Demo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Utusi Star';
+  src: url('fonts/Utusi Star Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Challenge Conditions';
+  src: url('fonts/challenge conditions demo regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DFVN Lagmaq';
+  src: url('fonts/DFVN Lagmaq.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'iCiel Finch';
+  src: url('fonts/iCiel Finch.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'UTM Beautiful Caps';
+  src: url('fonts/UTM Beautiful Caps.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MTD MagicIvy';
+  src: url('fonts/MTD\MagicIvy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MTD Houstoner Script';
+  src: url('fonts/MTD\MTD Houstoner Script.otf') format('opentype');
+}
+
+/* background */
+body {
+  background: linear-gradient(rgba(83, 40, 100, 0.0), rgba(61, 48, 116, 0.0)), url('images/bg1.jpg');
+  background-size: cover;
+  /* Lấp đầy toàn bộ màn hình */
+  background-position: center;
+  /* Căn giữa ảnh nền */
+  background-attachment: fixed;
+  /* Giữ ảnh nền cố định khi cuộn trang */
+  overflow: hidden;
+}
+
+.cover {
+  position: relative;
+  height: 300px;
+  background: #ddd;
+  border: 10px solid white;
+
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* chữ */
+.content {
+  margin-top: 70px;
+  display: flex;
+  /* Kích hoạt flexbox */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  text-align: center;
+  /* Đảm bảo chữ bên trong căn giữa */
+}
+
+.ten {
+  display: flex;
+  color: white;
+  font-size: 70px;
+  font-family: 'DFVN Lagmaq';
+  background: linear-gradient(45deg, #ff416c, rgb(255, 139, 148), #ff4b2b);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 2s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.quote {
+  display: flex;
+  position: absolute;
+  top: 330px;
+  color: #ffffff;
+  font-size: 37px;
+  text-align: center;
+  font-family: 'MTD Houstoner Script';
+  text-shadow: 0 0 10px rgba(92, 70, 70, 0.8);
+}
+
+.button-container {
+  margin-top: 0px;
+  display: flex;
+  /* Kích hoạt flexbox */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  gap: 25px;
+}
+
+.button-homepage,
+.button-me,
+.button-game,
+.button-artwork {
+  display: flex;
+  font-family: 'DFVN Lagmaq';
+  background: linear-gradient(45deg, rgb(145, 160, 127), rgb(146, 160, 127));
+  /* Gradient màu */
+  width: 160px;
+  height: 50px;
+  line-height: 55px;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  color: white;
+  /* Màu chữ */
+  /* Kích thước */
+  border: none;
+  border-radius: 12px;
+  /* Bo góc */
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* Hiệu ứng chuyển động */
+}
+
+.button-homepage:hover,
+.button-me:hover,
+.button-game:hover,
+.button-artwork:hover {
+  background: linear-gradient(45deg, rgb(127, 160, 146), rgb(127, 160, 146));
+  /* Đổi màu khi hover */
+  transform: scale(1.05);
+  /* Phóng to nhẹ */
+}
+
+/* hieu ung nhac */
+#notes-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.note {
+  position: absolute;
+  animation: fall linear infinite;
+  user-select: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 10;
+}
