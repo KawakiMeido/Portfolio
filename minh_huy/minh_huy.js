@@ -55,7 +55,7 @@ img.addEventListener("mouseenter", () => {
                 resetAudio();
                 unrequited();
             }
-        }, 1000);
+        }, 13000);
     }
 });
 
