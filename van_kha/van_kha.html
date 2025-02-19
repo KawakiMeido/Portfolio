@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="..\CSS\test.css">
-        <meta charset="utf-8">
-        <title> Tay Gai </title>
-    </head>
-    <header>
-        <div class ="topnav">
-            <a href="../home/home.html">Home</a>
-            <a href="../minh_duy/minh_duy.html"> Minh Duy</a>
-            <a href="../minh_huy/minh_huy.html"> KawakiMeido</a>
-            <a href="../thanh_tai/thanh_tai.html"> Thành Tài</a>
-            <a class="active" href="#"> Vaka </a>
-        </div>
-    </header>
-    <body>
-        <h1> bruh </h1>
 
-    </body>
+<head>
+  <link rel="stylesheet" href="..\CSS\test.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Portfolio </title>
+  <link rel="stylesheet" href="style.css"> </style>
+</head>
+<header>
+  <div class="topnav">
+    <a href="../home/home.html">Home </a>
+    <a href="../minh_duy/minh_duy.html"> Minh Duy </a>
+    <a href="../minh_huy/minh_huy.html"> KawakiMeido </a>
+    <a href="../thanh_tai/thanh_tai.html"> Thành Tài </a>
+    <a class="active" href="#"> Vân Kha </a>
+  </div>
+</header>
+
+<body>
+  <div class="dia-nhac">
+    <!-- avatar đĩa nhạc -->
+    <div class="disc-container">
+      <div class="disc">
+        <img src="images/happy.jpg" alt="Avatar" class="avatar">
+      </div>
+    </div>
+    <div id="notes-container"> </div>
+    <script src="script.js"> </script>
+    <!-- avatar line -->
+    <!-- <div class="avatar-line"> </div> -->
+    <!-- liên hệ -->
+    <div class="contact"> 
+      <p> Liên hệ </p>
+    </div>
+    <!-- icon -->
+    <div class="icon-container">
+      <a href="https://www.threads.net/@vankhalicia" target="_blank">
+        <img src="images/thread.png" alt="Threads" class="social-icon1">
+      </a>
+      <a href="https://www.facebook.com/nguyencuuvankha/" target="_blank">
+        <img src="images/fb.png" alt="Facebook" class="social-icon2">
+      </a>
+      <a href="mailto:vankha09052007@gmail.com">
+        <img src="images/gmail.png" alt="Gmail" class="social-icon3">
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- tiêu đề/ tên -->
+    <div class="ten">
+      <p> VÂN KHA </p>
+    </div>
+    <!-- note/ bổ sung/ quote -->
+    <div class="quote">
+      <p> Cuộc sống giống như một phép thử <br> Bạn thử càng nhiều - bạn càng làm tốt! </p>
+    </div>
+  </div>
+
+  <div class="button-container1">
+    <!-- button home -->
+    <button class="button-homepage" onclick="window.location.href='van_kha.html'"> Trang Chủ </button>
+    <!-- button me-->
+    <button class="button-me" onclick="window.location.href='me.html'"> Giới Thiệu </button>
+  </div>
+  <div class="button-container2">
+    <!-- button art -->
+    <button class="button-artwork" onclick="window.location.href='artwork.html'"> Tranh Vẽ </button>
+    <!-- button game-->
+    <button class="button-game" onclick="window.location.href='game.html'"> Trò Chơi </button>
+  </div>
+</body>
 </html>
