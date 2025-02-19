@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+
+header{
+    display:flex;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    display:flex;
+    background-color: #424769;
+    overflow: hidden;
+    align-items: center;     /* Aligns buttons vertically */
+    width: 100%;
+    border-style: solid;
+    border-color: #424769;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    width: 150px;           /*Fixed width*/
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+ 
+    
+body{
+    font-family: 'Courier New';
+    background-color: #2D3250;
+}
+
+.topnav{
+    font-family: 'Times New Roman';
+}
+
+#title{
+    color: white;
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 24px;
+}
+
+#member-list{
+    width: 70%;
+    padding: 10px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member-list-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 320px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    margin: 0px 20px 60px 20px;
+    height: 540px;
+    background-color:#424769;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #424769;
+}
+
+.member-list-item>a>img{
+    width: 320px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    height: 450px;
+    object-fit: cover;
+    overflow: hidden;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: #989bbe; */
+    margin: 0;
+}
+
+.member-list-item>.member-list-item-text{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}

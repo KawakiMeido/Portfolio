@@ -1,0 +1,226 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}  
+
+header{
+    display:flex;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    display:flex;
+    background-color: #e36aa5;
+    overflow: hidden;
+    align-items: center;     /* Aligns buttons vertically */
+    width: 100%;
+    border-style: solid;
+    border-color: #e36aa5;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    width: 150px;           /*Fixed width*/
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ffd8d8;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #ffedf4;
+    color: black;
+}
+
+/* Body */
+body{
+    background-color: #ffa0ce;
+    color: #000000;
+    font-family:'Courier New', Courier;
+}
+
+#warning-Box{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    width: 101%;
+    height: 101%;
+    font-size: 22px;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-out;
+    z-index: 10;
+}
+
+/* Title bar */
+#title-bar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20px 0px 10px 0px;
+    padding: 5px 50px 5px 0px;
+    width: 500px;
+    height: 50px;
+    color: black;
+    background-color: #f8dbf8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 2px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 0px 0px 5px 5px #62466B; */
+}
+
+#title-bar h1{
+    text-align: right;
+    padding-right: 50px;
+}
+
+/* Intro */
+#intro{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: 76%;
+}
+
+.intro-item{
+    width: 500px;
+    height: 450px;
+}
+
+#self-description, #intro{
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 10px 0px;
+}
+
+/* #intro-text{
+    border-width: 0px;
+    border-right-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+} */
+
+#about-me {
+    margin-bottom: 50px;
+}
+
+#about-me li{
+    margin-bottom: 10px;
+}
+
+#contact li{
+    margin-bottom: 10px;
+}
+
+#contact img{
+    width: 20px;
+    height: 20px;
+}
+
+#avatar {
+    float: right;
+    overflow: hidden;
+    /* margin-right: 10%; */
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+#self-description p{
+    font-size: 22px;
+}
+
+/* Technical Info */
+
+#technical-info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    /* height: 500px; */
+    padding-left: 12%;
+    margin: 20px 0px 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    background-color: #f8dbf8;
+    border-width: 2px;
+    border-left-width: 0px;
+    border-style: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* box-shadow: 0px 0px 8px 8px #e36aa5; */
+}
+
+#technical-info>.technical-info-item{
+    width: 80%;
+}
+
+.technical-info-item>ul{
+    font-size: 22px;
+}
+
+/* Footer */
+#footer {
+    position: fixed;   /* Fixes the footer in place */
+    bottom: 0;         /* Sticks it to the bottom */
+    left: 0;           /* Aligns it to the left */
+    width: 100%;       /* Ensures full width */
+    background-color: #e36aa5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+#footer h3{
+    margin: 0px 0px 10px 0px;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 20%;
+}
+
+#footer-container img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-item {
+    margin: 5px;
+}
+
+#i-do-not-know-how-to-create-a-legit-footer-so-here-is-some-extra-space{
+    width: 100%;
+    height: 150px;
+}
