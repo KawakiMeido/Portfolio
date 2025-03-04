@@ -1,0 +1,125 @@
+header{
+  display:flex
+}
+body {
+background-color: rgb(12, 12, 12);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.ha > h1 {
+  color: red;
+}
+h1 {
+  float:left;
+  color: #33CC33;
+  text-align: center;
+  margin-left: 20px; /* Dịch sang phải 50px */
+}
+h2{
+float:left;
+color: #33CC33;
+margin-left:20px;
+
+}
+/* h2 {
+
+} */
+img {
+  float: right
+}
+#robot{
+width: 200px;  /* Điều chỉnh kích thước */
+position: fixed;
+bottom: 30px;  /* Cách mép dưới 10px */
+right: 30px;  /* Cách mép trái 10px */
+}
+#description-box {
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  top: -20px;
+  left: 50px;
+width: 80%;
+max-width: 700px;
+background-color: black;
+padding: 20px;
+border: 2px solid #33CC33;
+border-radius: 10px;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+text-align: justify;
+font-size: 18px;
+color: white;
+float:left;
+}
+
+
+#avatar{
+  position: absolute;
+  left: 30px;
+border-radius: 50%;
+height: 200px;
+width: 200px;
+position:relative;
+top:40px;
+float:left;
+  
+}
+#img{
+width:900px;
+height:900px;
+clip-path: circle(100px at 50% 50%);
+}
+#logosocial {
+float:left;
+width: 100px;  /* Đặt chiều rộng mong muốn */
+height: auto;  /* Tự động giữ tỷ lệ ảnh */
+margin-right:15px;
+}
+#intro{
+  font-family: 'Courier New', Courier, monospace;
+display: flex;
+position: relative;
+left:10px;
+flex-wrap: wrap-reverse;
+justify-content: space-between;
+width: 76%;
+}
+
+.intro-item{
+width: 800px;
+height: 450px;
+color: rgb(250, 248, 248);
+}
+#about-me {
+margin-bottom: 50px;
+}
+
+#about-me li{
+margin-bottom: 10px;
+}
