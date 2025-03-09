@@ -63,6 +63,33 @@ html {
   src: url('fonts/MTD\MTD Houstoner Script.otf') format('opentype');
 }
 
+.topnav {
+  display:flex;
+  background-color: #ffb1a1;
+  overflow: hidden;
+  align-items: center;     /* Aligns buttons vertically */
+  width: 100%;
+  border-style: solid;
+  border-color: #ffb1a1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  width: 150px;           /*Fixed width*/
+  text-align: center;
+  justify-content: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #ffedf4;
+  color: rgb(241, 122, 122);
+}
+
 /* background */
 body {
   background: linear-gradient(rgba(83, 40, 100, 0.0), rgba(61, 48, 116, 0.0)), url('images/bg1.jpg');
@@ -251,6 +278,19 @@ body {
   box-shadow: 0 0 5px rgba(235, 144, 144, 0.5);
 }
 
+.line1 {
+  display: flex;
+  justify-content: center;
+  top: 420px;
+  width: 800px;
+  height: 3px;
+  background: linear-gradient(150deg, #ffa493, rgb(255, 145, 123));
+  /* background: linear-gradient(45deg, rgb(166, 182, 147), rgb(117, 146, 128)); */
+  border-radius: 4px;
+  margin: 35px auto;
+  box-shadow: 0 0 5px rgba(235, 144, 144, 0.5);
+}
+
 .chung {
   margin-top: -30px;
   display: flex;
@@ -359,7 +399,7 @@ body {
   margin-top: 30px;
   display: flex;
   height: 100px;
-  width: 560px;
+  width: 540px;
   background: linear-gradient(45deg, rgb(255, 212, 212), rgb(255, 212, 212));
   border: 2px solid rgba(255, 170, 170, 0.8);
   border-radius: 20px;
@@ -368,7 +408,7 @@ body {
 .chuhocvan {
   display: flex;
   margin-top: -12px;
-  margin-left: 230px;
+  margin-left: 220px;
   white-space: nowrap;
   justify-content: center;
   color:  #ff745c;
@@ -379,7 +419,7 @@ body {
 .ketquahocvan {
   display: flex;
   margin-top: 30px;
-  margin-left: -325px;
+  margin-left: -300px;
   font-family: 'iCiel Finch';
   white-space: nowrap;
   font-size: 30px;
@@ -387,7 +427,6 @@ body {
 }
 
 .kinhnghiemlamviec {
-  margin-top: 0px;
   display: flex;
   justify-content: center;
   color: white;
@@ -401,41 +440,39 @@ body {
 }
 
 .khunghdnk {
-  margin-top: -20px;
+  
   display: flex;
+  margin-top: -20px;
   height: 400px;
-  width: 560px;
+  width: 540px;
   background: linear-gradient(45deg, rgb(145, 160, 127), rgb(145, 160, 127));
   border-radius: 20px;
 }
 
 .maple-ten {
-  position: absolute;
-  top: 690px;
-  left: 515px;
-  justify-content: center;
-  margin-left: 60px;
-  white-space: nowrap;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 20px;
   color:  #ffd7d1;
+  text: nowrap;
   font-size: 25px;
   font-family: 'DFVN Lagmaq';
 }
 
 .maple-congviec {
-  position: absolute;
-  top: 720px;
-  left: 575px;
+  display: flex;
+  margin-top: -50px;
+  white-space: nowrap;
+  margin-left: 20px;
   font-family: 'iCiel Finch';
   font-size: 30px;
   color:#f0f0f0;
 }
 
 .vol-ten {
-  position: absolute;
-  top: 770px;
-  left: 515px;
-  justify-content: center;
-  margin-left: 60px;
+  display: flex;
+  margin-top: 85px;
+  margin-left: -430px;
   white-space: nowrap;
   color:  #ffd7d1;
   font-size: 25px;
@@ -443,21 +480,20 @@ body {
 }
 
 .vol-congviec {
-  position: absolute;
-  top: 800px;
-  left: 575px;
+  display: flex;
+  margin-top: -55px;
+  margin-left: -430px;
   font-family: 'iCiel Finch';
+  white-space: nowrap;
   font-size: 30px;
   color:#f0f0f0;
   line-height: 40px;
 }
 
 .te-ten {
-  position: absolute;
-  top: 895px;
-  left: 515px;
-  justify-content: center;
-  margin-left: 60px;
+  display: flex;
+  margin-top: 210px;
+  margin-left: -430px;
   white-space: nowrap;
   color:  #ffd7d1;
   font-size: 25px;
@@ -465,9 +501,10 @@ body {
 }
 
 .te-congviec {
-  position: absolute;
-  top: 920px;
-  left: 575px;
+  display: flex;
+  margin-top: -55px;
+  margin-left: -430px;
+  white-space: nowrap;
   font-family: 'iCiel Finch';
   font-size: 30px;
   color:#f0f0f0;
@@ -475,11 +512,9 @@ body {
 }
 
 .lhpic-ten {
-  position: absolute;
-  top: 975px;
-  left: 515px;
-  justify-content: center;
-  margin-left: 60px;
+  display: flex;
+  margin-top: 295px;
+  margin-left: -430px;
   white-space: nowrap;
   color:  #ffd7d1;
   font-size: 25px;
@@ -487,9 +522,10 @@ body {
 }
 
 .lhpic-congviec {
-  position: absolute;
-  top: 1000px;
-  left: 575px;
+  display: flex;
+  margin-top: -55px;
+  margin-left: -430px;
+  white-space: nowrap;
   font-family: 'iCiel Finch';
   font-size: 30px;
   color:#f0f0f0;
@@ -497,10 +533,10 @@ body {
 }
 
 .meow {
-  position: absolute;
-  top: 782px;
-  left: 870px;
-  width: 230px;
+  display: flex;
+  margin-top: -315px;
+  margin-left: -150px;
+  height: 295px;
 }
 
 /* hieu ung nhac */

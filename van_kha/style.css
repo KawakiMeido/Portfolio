@@ -75,6 +75,33 @@ body {
   overflow: hidden;
 }
 
+.topnav {
+  display:flex;
+  background-color: #ffb1a1;
+  overflow: hidden;
+  align-items: center;     /* Aligns buttons vertically */
+  width: 100%;
+  border-style: solid;
+  border-color: #ffb1a1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  width: 150px;           /*Fixed width*/
+  text-align: center;
+  justify-content: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #ffedf4;
+  color: rgb(241, 122, 122);
+}
+
 .cover {
   position: relative;
   height: 300px;
@@ -230,7 +257,7 @@ body {
 .quote {
   display: flex;
   position: absolute;
-  top: 225px;
+  top: 210px;
   color: #ffffff;
   font-size: 37px;
   text-align: center;
